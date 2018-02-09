@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>A Simple Responsive HTML Email</title>
+        <style type="text/css">
+            /*
+            @media only screen and (min-device-width: 601px) {
+                .content {width: 600px !important;}
+                .col425 {width: 425px!important;}
+                .col380 {width: 380px!important;}
+            }
+            @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
+                body[yahoo] .buttonwrapper {background-color: transparent!important;}
+                body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important; display: block!important;}
+            }
+            */
+
+            body {margin: 0; padding: 0; min-width: 100%!important;}
+            .header {padding: 40px 30px 20px 30px;}
+            .brand {font-size: 33px; color: #ffffff; font-family: sans-serif; font-weight: bold;}
+            .content {width: 100%; max-width: 600px; background-color: #ffffff;}
+            .subhead {font-size: 15px; color: #ffffff; font-family: sans-serif; letter-spacing: 10px;}
+            .h1 {font-size: 33px; line-height: 38px; font-weight: bold;}
+            .h1, .h2, .bodycopy {color: #153643; font-family: sans-serif;}
+            .innerpadding {padding: 30px 30px 30px 30px;}
+            .borderbottom {border-bottom: 1px solid #c7c7c7;}
+            .h2 {padding: 0 0 15px 0; font-size: 24px; line-height: 28px; font-weight: bold;}
+            .bodycopy {font-size: 16px; line-height: 22px;}
+            .button {text-align: center; font-size: 18px; font-family: sans-serif; font-weight: bold; padding: 0 30px 0 30px;}
+            .button a {color: #ffffff; text-decoration: none;}
+            img {height: auto;}
+            .footer {padding: 20px 30px 15px 30px;}
+            .footercopy {font-family: sans-serif; font-size: 14px; color: #ffffff;}
+            .footercopy a {color: #ffffff; text-decoration: underline;}
+        </style>
+    </head>
+    <body yahoo bgcolor="#eeeeee">
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td>
+                    <![endif]-->
+                    <table class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td class="header" bgcolor="#83D3C9">
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td align="center" class="brand" style="padding: 0 0px 20px 0;">
+                                            INFLATE.CH
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="innerpadding">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td class="h2">
+                                            Thank you for your order!
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bodycopy">
+                                            <br/>
+                                            <span style="font-weight: bold;">Hello Tamara,</span>
+                                            <br/>
+                                            <br/>
+                                            We are happy to see that you found what you were looking for!
+                                            <br/> 
+                                            Your order is now being processed and your package will shortly be on its way.
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bodycopy innerpadding">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td style="font-weight: bold;">Order Address</td>
+                                        <td style="font-weight: bold;" align="right">Order Number</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="50%" align="left" valign="top">
+                                            Tamara Miteva<br/>
+                                            Route Cantonale 99A<br/>
+                                            studio 1510<br/>
+                                            1025 Saint Sulpice
+                                        </td>
+                                        <td align="right" valign="top">
+                                            <div style="font-weight: bold; display: block; color:#83D3C9;">10701038565313</div>
+                                            <div style="font-weight: bold; display: block;">Order Date</div>
+                                            <div style="display: block;">16.12.2017</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bodycopy" style="font-weight: bold; padding: 30px 30px 0px 30px;">
+                                <table class="borderbottom" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td>Your Items</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="bodycopy" style="padding: 10px 30px 0px 30px;">Standard Delivery</td>
+                        </tr>
+                        <tr>
+                            <td class="bodycopy" style="font-weight: bold; padding: 0px 30px 10px 30px;">19.12.2017 - 22.12.2017</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0px 30px 0px 30px">
+                                <table width="115" align="left" border="0" cellpadding="0" cellspacing="0">  
+                                <tr>
+                                    <td height="115" style="padding: 0 20px 20px 0;">
+                                        <img src="images/inflate-sofa.jpg" width="115" height="115" border="0" alt="" />
+                                    </td>
+                                </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table width="380" align="left" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td>
+                                <![endif]-->
+                                <table class="col380" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 380px;">  
+                                <tr>
+                                    <td>
+                                        <table class="bodycopy" style="padding: 15px 0px 0px 0px" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td style="font-weight: bold;">
+                                                    Inflate Sofa
+                                                </td>
+                                                <td align="right">CHF 24.00</td>
+                                            </tr>
+                                        </table>
+                                        <table class="bodycopy" style="color:#949494" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>Outdoor/indoor inflatable sofa</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Color: Dark Blue</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Quantity: 1</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0px 30px 0px 30px">
+                                <table width="115" align="left" border="0" cellpadding="0" cellspacing="0">  
+                                <tr>
+                                    <td height="115" style="padding: 0 20px 20px 0;">
+                                        <img src="images/inflate-sofa-green.jpg" width="115" height="115" border="0" alt="" />
+                                    </td>
+                                </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table width="380" align="left" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                    <td>
+                                <![endif]-->
+                                <table class="col380" align="left" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 380px;">  
+                                <tr>
+                                    <td>
+                                        <table class="bodycopy" style="padding: 15px 0px 0px 0px;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td style="font-weight: bold;">
+                                                    Inflate Sofa
+                                                </td>
+                                                <td align="right">CHF 48.00</td>
+                                            </tr>
+                                        </table>
+                                        <table class="bodycopy" style="color:#949494;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>Outdoor/indoor inflatable sofa</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Color: Green</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Quantity: 2</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </table>
+                                <!--[if (gte mso 9)|(IE)]>
+                                    </td>
+                                    </tr>
+                                </table>
+                                <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0px 30px 0px 30px;">
+                                <table class="borderbottom" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px 30px 0px 30px;">
+                                <table class="bodycopy" style="font-size: 14px;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <!-- detailed and total price -->
+                                    <tr>
+                                        <td>PAYEMENT METHOD</td>
+                                        <td align="right" style="color:#949494;">CREDIT CARD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>COST OF GOODS</td>
+                                        <td align="right" style="color:#949494;">CHF 72.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DELIVERY COST</td>
+                                        <td align="right" style="color:#949494;">FREE</td>
+                                    </tr>
+                                    <tr style="font-weight: bold; font-size: 16px;">
+                                        <td style="padding-top: 10px;">TOTAL COST</td>
+                                        <td style="padding-top: 10px;" align="right">CHF 72.00</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="innerpadding">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus adipiscing felis, sit amet blandit ipsum volutpat sed. Morbi porttitor, eget accumsan dictum, nisi libero ultricies ipsum, in posuere mauris neque at erat.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="footer" bgcolor="#44525f">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td align="center" class="footercopy">
+                                            &amp;reg; Someone, somewhere 2013<br/>
+                                            <a href="#"><font color="#ffffff">Unsubscribe</font></a> from this newsletter instantly
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="padding: 20px 0 0 0;">
+                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
+                                                        <a href="http://www.facebook.com/">
+                                                            <img src="images/facebook.png" width="37" height="37" alt="Facebook" border="0" />
+                                                        </a>
+                                                    </td>
+                                                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
+                                                        <a href="http://www.twitter.com/">
+                                                            <img src="images/twitter.png" width="37" height="37" alt="Twitter" border="0" />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                </td>
+            </tr>
+        </table>
+        <![endif]-->
+    </body>
+</html>
